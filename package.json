@@ -2,11 +2,12 @@
   "name": "advanced-react",
   "version": "1.0.0",
   "description": "Advanced React",
-  "main": "lib/renderers/server.js",
+  "main": "lib/server.js",
   "author": "Michael McGuirk",
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_PATH=./lib pm2 start lib/renderers/server.js --watch --interpreter babel-node",
+    "dev": "NODE_PATH=./lib pm2 start lib/server.js --watch --interpreter babel-node",
+    "start": "NODE_PATH=./lib pm2 start lib/server.js --interpreter babel-node",
     "webpack": "webpack -wd",
     "test": "jest --watchAll"
   },
